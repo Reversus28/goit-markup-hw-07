@@ -11,8 +11,8 @@
 .projects__button {
   padding: 6px 22px;
 
-  font-family: Roboto;
-  font-weight: 500;
+  font-family: var(--primary-font-family);
+  font-weight: var(--font-weight-medium);
   font-size: 16px;
   line-height: 1.6;
   letter-spacing: 0.03em;
@@ -111,7 +111,7 @@
 .card__title {
   margin-bottom: 4px;
 
-  font-weight: 700;
+  font-weight: var(--font-weight-bold);
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;

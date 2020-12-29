@@ -5,7 +5,7 @@
   }
 
   &__link {
-    @include flex();
+    @extend %flex;
     width: 170px;
     height: 90px;
 

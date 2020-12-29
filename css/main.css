@@ -10,12 +10,29 @@
   --secondary-bg-color: #f5f4fa;
   --accent-color: #2196f3;
   --color-icon: #afb1b8;
+  --primary-font-family: 'Roboto', sans-serif;
+  --secondary-font-family: 'Raleway', sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+}
+
+.social__link, .advantages__background, .clients__link, .footer__button, .modal__button, .modal__agreement {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 body {
   color: var(--primary-text-color);
   background-color: #ffffff;
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--primary-font-family);
   font-size: 14px;
   letter-spacing: 0.03em;
 }
@@ -77,7 +94,7 @@ img {
 
 .section-title {
   margin-bottom: 50px;
-  font-weight: 700;
+  font-weight: var(--font-weight-bold);
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -87,7 +104,7 @@ img {
   min-width: 200px;
   padding-top: 10px;
   padding-bottom: 10px;
-  font-weight: 700;
+  font-weight: var(--font-weight-bold);
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
@@ -118,15 +135,6 @@ img {
 }
 
 .social__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   width: 44px;
   height: 44px;
   color: var(--color-icon);
@@ -143,8 +151,8 @@ img {
 
 .logo {
   color: #000000;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
+  font-family: var(--secondary-font-family);
+  font-weight: var(--font-weight-bold);
   font-size: 26px;
   line-height: 1.5;
   text-decoration: none;
@@ -192,7 +200,7 @@ img {
   padding-bottom: 32px;
   color: var(--primary-text-color);
   font-size: 14px;
-  font-weight: 500;
+  font-weight: var(--font-weight-medium);
   line-height: 1.4;
   letter-spacing: 0.02em;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -233,7 +241,7 @@ img {
       -ms-flex-align: center;
           align-items: center;
   color: var(--secondary-text-color);
-  font-weight: 500;
+  font-weight: var(--font-weight-medium);
   font-style: normal;
   line-height: 1.4;
   letter-spacing: 0.02em;
@@ -296,15 +304,6 @@ img {
 }
 
 .advantages__background {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   padding: 25px 100px;
   margin-bottom: 30px;
   background-color: var(--secondary-bg-color);
@@ -312,7 +311,7 @@ img {
 
 .advantages__title {
   margin-bottom: 10px;
-  font-weight: 700;
+  font-weight: var(--font-weight-bold);
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
@@ -344,7 +343,7 @@ img {
   padding-top: 27px;
   padding-bottom: 27px;
   line-height: 1.4;
-  font-weight: 700;
+  font-weight: var(--font-weight-bold);
   text-transform: uppercase;
   text-align: center;
   color: #ffffff;
@@ -382,13 +381,13 @@ img {
   margin-top: 30px;
   margin-bottom: 10px;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: var(--font-weight-medium);
 }
 
 .team__career {
   margin-bottom: 16px;
   color: var(--secondary-text-color);
-  font-weight: 400;
+  font-weight: var(--font-weight-regular);
 }
 
 .clients__list {
@@ -401,15 +400,6 @@ img {
 }
 
 .clients__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   width: 170px;
   height: 90px;
   color: var(--color-icon);
@@ -459,7 +449,7 @@ img {
 .footer__call {
   display: inline-block;
   margin-bottom: 20px;
-  font-weight: 700;
+  font-weight: var(--font-weight-bold);
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
@@ -538,18 +528,6 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer__button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .button__icon {
   margin-left: 10px;
   fill: #ffffff;
@@ -579,15 +557,6 @@ img {
   position: absolute;
   top: 8px;
   right: 8px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   padding: 0;
   width: 30px;
   height: 30px;
@@ -607,7 +576,7 @@ img {
   display: inline-block;
   margin-bottom: 12px;
   text-align: center;
-  font-weight: 700;
+  font-weight: var(--font-weight-bold);
   font-size: 20px;
   line-height: 1.15;
 }
@@ -708,15 +677,6 @@ img {
 
 .modal__agreement {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin-bottom: 30px;
   line-height: 1.7;
   color: var(--secondary-text-color);
@@ -787,8 +747,8 @@ img {
 
 .projects__button {
   padding: 6px 22px;
-  font-family: Roboto;
-  font-weight: 500;
+  font-family: var(--primary-font-family);
+  font-weight: var(--font-weight-medium);
   font-size: 16px;
   line-height: 1.6;
   letter-spacing: 0.03em;
@@ -891,7 +851,7 @@ img {
 
 .card__title {
   margin-bottom: 4px;
-  font-weight: 700;
+  font-weight: var(--font-weight-bold);
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;

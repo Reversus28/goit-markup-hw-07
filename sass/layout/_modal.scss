@@ -19,7 +19,7 @@
     top: 8px;
     right: 8px;
 
-    @include flex();
+    @extend %flex;
 
     padding: 0;
 
@@ -42,7 +42,7 @@
     margin-bottom: 12px;
 
     text-align: center;
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
     font-size: 20px;
     line-height: 1.15;
   }
@@ -127,7 +127,7 @@
 
 .modal__agreement {
   position: relative;
-  @include flex();
+  @extend %flex;
 
   margin-bottom: 30px;
 
